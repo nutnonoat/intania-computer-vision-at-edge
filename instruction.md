@@ -121,7 +121,7 @@ Output should look like
 
 ## 3. Deploy Sample Data Component
 
-### Prepare environment
+### Preparation
 
 * Create S3 bucket
 
