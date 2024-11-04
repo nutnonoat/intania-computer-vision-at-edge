@@ -2,7 +2,7 @@
 
 
 
-## 1.Provision EC2 with VS Code Server using CloudFormation Template ( Default VPC)
+## 1. Provision EC2 with VS Code Server using CloudFormation Template ( Default VPC)
 
 * Make sure to use AWS Region `eu-central-1`
 * Create a Key Pair
@@ -23,7 +23,7 @@
 
 * * *
 
-## 2.Install Greengrass Core on the EC2
+## 2. Install Greengrass Core on the EC2
 
 ### Installation
 
@@ -119,7 +119,7 @@ Output should look like
 
 * * *
 
-## 3.Deploy Sample Data Component
+## 3. Deploy Sample Data Component
 
 ### Prepare environment
 
@@ -169,7 +169,8 @@ aws iam create-policy-version \
 ```
 
 
-**Create and Deploy Greengrass Component**
+
+### **Create and Deploy Greengrass Component**
 
 * Download sample data
 
@@ -256,7 +257,7 @@ find $gg_home/packages/artifacts-unarchived/$component_name/$component_version/$
 
 * * *
 
-## 4.Deploy Acquisition Component (GStreamer)
+## 4. Deploy Acquisition Component (GStreamer)
 
 ### Preparation
 
@@ -447,7 +448,7 @@ docker system prune
 
 * * *
 
-## 5.Deploy Interference Components (People Counter)
+## 5. Deploy Interference Components (People Counter)
 
 ### Preparation
 
@@ -610,8 +611,7 @@ aws greengrassv2 create-component-version --inline-recipe fileb://~/GreengrassCo
 
 * Verify result
     * Run `ls /tmp/data -la` → will see frame images continuously created with people overlay. You may also open the directory to view the images.
-    * In [AWS IoT Console](https://eu-central-1.console.aws.amazon.com/iot/home?region=eu-central-1#/test), put `#` in the `Topic filter` to subscribe to any topic. You will also see People Overlay data published successfully to `demo/topic`
-
+    * In [AWS IoT Console](https://eu-central-1.console.aws.amazon.com/iot/home?region=eu-central-1#/test), put # in the Topic filter to subscribe to any topic. You will also see People Overlay data published successfully to demo/topic
 
 * * *
 
