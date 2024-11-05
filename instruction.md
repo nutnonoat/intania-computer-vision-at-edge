@@ -5,7 +5,7 @@
 ## 1. Provision EC2 with VS Code Server using CloudFormation Template (in Default VPC only)
 
 * Make sure to use AWS Region `eu-central-1`
-* Create a Key Pair
+* Create a Key Pair in [EC2 Console](https://eu-central-1.console.aws.amazon.com/ec2/home?region=eu-central-1#KeyPairs:)
     * name → `ws-default-keypair`
     * type → `RSA`
     * format → `.pem`
