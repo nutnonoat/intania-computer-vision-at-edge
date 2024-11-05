@@ -610,7 +610,7 @@ aws greengrassv2 create-component-version --inline-recipe fileb://~/GreengrassCo
 
 
 * Verify result
-    * Run `ls /tmp/data -la` → will see frame images continuously created with people overlay. You may also open the directory to view the images.
+    * Run `ls /tmp/out -la` → will see frame images continuously created with people overlay. You may also open the directory to view the images.
     * In [AWS IoT Console](https://eu-central-1.console.aws.amazon.com/iot/home?region=eu-central-1#/test), put # in the Topic filter to subscribe to any topic. You will also see People Overlay data published successfully to demo/topic
 
 * * *
