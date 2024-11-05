@@ -2,7 +2,7 @@
 
 
 
-## 1. Provision EC2 with VS Code Server using CloudFormation Template ( Default VPC)
+## 1. Provision EC2 with VS Code Server using CloudFormation Template (in Default VPC only)
 
 * Make sure to use AWS Region `eu-central-1`
 * Create a Key Pair
@@ -448,7 +448,7 @@ docker system prune
 
 * * *
 
-## 5. Deploy Interference Components (People Counter)
+## 5. Deploy Inference Components (People Counter)
 
 ### Preparation
 
@@ -466,7 +466,7 @@ sudo chown -R ggc_user:ggc_group /tmp/out
 
 
 
-### Create Interference component
+### Create Inference component
 
 * **Create environment variables**
 
